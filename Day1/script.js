@@ -1,6 +1,7 @@
 //import webTechs from "./webTech";
-//import countries from "./countries";
-// Frontend array example
+import { countries } from "./countries";
+
+
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux'];
 
 console.log(frontEnd.length); 
@@ -30,3 +31,19 @@ console.log("Companies with more than one 'o':", companiesWithMoreThanOneO);
 let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.';
 let splitText = text.split(','); 
 console.log(splitText);
+
+let found = false;
+
+for (let country of countries) {
+    if (country.toLowerCase() === 'ethiopia') {
+        console.log('Ethiopia is present');
+        found = true;
+        break; 
+    }
+}
+
+if (!found) {
+    console.log('Ethiopia is not present');
+}
+
+
