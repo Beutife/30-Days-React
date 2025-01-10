@@ -1,5 +1,6 @@
-//import webTechs from "./webTech";
+import webTechs from "./webTech";
 import { countries } from "./countries";
+import webTechs from "./webTech";
 
 
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux'];
@@ -47,3 +48,40 @@ if (!found) {
 }
 
 
+const sentence = ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
+let reSentence = sentence.replace(/[.,]/g, '').split(',')
+console.log(reSentence.length());
+
+
+const webTechs = webTech;
+
+
+if(webTechs.includes()=='Sass') {
+    console.log("Sass is a precessor")
+}else {
+    const addwebTech = webTech.push("Sass");
+    console.log(addwebTech)
+};
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+let  sortedAge = ages.sort((a,b) => a-b);
+let minAge = sortedAge[0];
+let maxAge = sortedAge[sortedAge.length - 1];
+console.log("Sorted Ages:", sortedAge);
+console.log("Min Age:", minAge);
+console.log("Max Age:", maxAge);
+
+let medianAge;
+if (sortedAges.length % 2 === 0) {
+  let mid1 = sortedAges[sortedAges.length / 2 - 1];
+  let mid2 = sortedAges[sortedAges.length / 2];
+  medianAge = (mid1 + mid2) / 2;
+} else {
+  medianAge = sortedAges[Math.floor(sortedAges.length / 2)];
+}
+
+console.log("Median Age:", medianAge);
+let rangeAge = ages.range(max, min);
+console.log(rangeAge);
+let sumAges = ages.sum(sumAges)
+console.log(sumAges)
