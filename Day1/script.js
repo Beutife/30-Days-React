@@ -85,3 +85,4 @@ let rangeAge = ages.range(max, min);
 console.log(rangeAge);
 let sumAges = ages.sum(sumAges)
 console.log(sumAges)
+
