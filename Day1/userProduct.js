@@ -73,13 +73,41 @@ const users = [
 
 
   function signUp(users){
-    let userDetails = [];
+    const userId = prompt('Enter your iD');
+    const userName = prompt('Enter your name');
+    const describe = prompt('What are you getting?');
+    const pricing = prompt('Enter price of product getting');
+    const rating = prompt('What rating will you give this');
+    
 
-    let signInDetails ={};
+    const existedUser = users.some(user => user.__id == userId);
 
-    users.forEach(user => {
-        
-    });
+    if (existedUser) {
+      console.log('Account exist already, login')
+    } else{
+      const newUSer = {
+        __id : userId,
+        name : userName,
+        description: describe,
+        price : pricing,
+        ratings : [{userId : __id, rate : rating}],
+        likes : [__id]
+      }
+    }
+    user.push(newUSer);
+    console.log('Congrats, signedUp successfully');
+     
+  }
 
+  function signIn(users){
+    const userName = prompt('What is your username');
+    const userId = prompt('Enter your Id')
 
+    const existedUser = users.find(user => user.__id === userId && user.name === userName)
+
+    if(existedUser){
+      console.log('SignIn successfully')
+    }else {
+      console.log('Create an account')
+    }
   }
